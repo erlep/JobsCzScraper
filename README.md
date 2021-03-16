@@ -1,1 +1,2 @@
-# JobsCzScraper
+# JobsCzScraper 
+tady bude popis
