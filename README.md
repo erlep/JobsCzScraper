@@ -1,4 +1,4 @@
-# JobsCzScraper v1.0b - from 17.03.2021 16:50
+# JobsCzScraper v1.0c - from 17.03.2021 16:50
 
 Python script save "python Brno" jobs ofers from https://jobs.cz to .xls
 
@@ -10,4 +10,4 @@ Base search URL https://www.jobs.cz/prace/brno/?q%5B%5D=python&employer=direct&p
 
 https://github.com/erlep/JobsCzScraper
 
-# made by peg
+# made by peg https://GitHub.com/ErleP
