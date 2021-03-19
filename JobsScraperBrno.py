@@ -55,7 +55,7 @@ def transform(soup):
 
 joblist = []
 
-for i in range(1, 4, 1):
+for i in range(1, 5, 1):
   print(f'Getting page, {i}')
   c = extract(i)
   transform(c)

@@ -1,6 +1,6 @@
-# JobsCzScraper v1.0e - from 18.03.2021 13:14
+# JobsCzScraper v1.0f - from 18.03.2021 13:14
 
-Python script save "python Brno" jobs ofers from https://jobs.cz to .xls
+Python script saves "python Brno" jobs offers from https://jobs.cz to .xls
 
 Inspired by https://github.com/jhnwr/scrapeindeed
 
