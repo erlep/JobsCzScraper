@@ -45,17 +45,17 @@ def transform(soup):
         'Title': title,
         'Company': company,
         'Salary': salary,
-        'Link': href,
         'Kdy': dtm,
         'Date Add': datum,
         # 'item': item,
+        'Link': href,
     }
     joblist.append(job)
   return
 
 joblist = []
 
-for i in range(1, 5, 1):
+for i in range(1, 6, 1):
   print(f'Getting page, {i}')
   c = extract(i)
   transform(c)
