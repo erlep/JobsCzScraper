@@ -33,7 +33,10 @@ def transform(soup):
     except:
       salary = ''
     href = '' + item.find('a').get("href") + ''
-    dtm = item.find('span', class_='label-added').text.strip()
+    try:
+      dtm = item.find('span', class_='label-added').text.strip()
+    except:
+      dtm = ''
     try:
       datum = item.find('span', {"class": "label-added", "data-label-added-valid-from": True})['data-label-added-valid-from']
     except:
