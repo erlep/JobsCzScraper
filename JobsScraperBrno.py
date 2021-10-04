@@ -9,6 +9,7 @@ import pandas as pd
 def extract(page):
   headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36'}
   url = f'https://cz.indeed.com/jobs?q=python&l=brno&start={page}'
+  # Python Brno https://www.jobs.cz/prace/brno/?q%5B%5D=python&employer=direct&page=01&locality%5Bradius%5D=10
   url = f'https://www.jobs.cz/prace/brno/?q%5B%5D=python&employer=direct&page={page}&locality%5Bradius%5D=10'
   r = requests.get(url, headers)
   soup = BeautifulSoup(r.content, 'html.parser')
@@ -25,11 +26,11 @@ def transform(soup):
     if (title == ''):
       continue
     try:
-      company = item.find('div', class_='search-list__main-info__company').text.strip()
+      company = item.find('span', class_='search-list__secondary-info--label').text.strip()
     except:
       company = ''
     try:
-      salary = item.find('span', class_='label label--success').text.strip()
+      salary = item.find('span', class_='search-list__tags__label search-list__tags__salary--label').text.strip()
     except:
       salary = ''
     href = '' + item.find('a').get("href") + ''
